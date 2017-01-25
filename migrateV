@@ -1,16 +1,19 @@
 #!/bin/bash
 
 usage() {
-  echo migrateVM.sh server.example.org  
-  echo -e "you have to be \033[41;1mroot\033[0m to use migrateVM.sh"
-  echo "start new mv and change to runlevel 1 (init 1)"
-  echo "loging with root and type ifup eth0||ens3"
-  echo "and bring up ssh service ssh start"
+  echo migrateV server.example.org  
+  echo -e "you have to be \033[41;1mroot\033[0m to use migrateV"
+  echo "Doku: https://github.com/tinoschroeter/migrateV"
 }
+if  [ $1 == "--help" ] || [ $1 == "-h" ];then
+  usage
+  exit 1
+fi
 
 if [ -n "$1" ] && [ "$(id -u)" == "0" ];then
-echo "root password: "
+echo "root password: ";exit 0
 time rsync -aAXv --exclude={"/dev/*","/proc/*","/sys","/boot","/dev","/etc/mtab","/etc/fstab","/etc/udev/rules.d","/lib/modules","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/etc/network/interfaces"} ssh / root@$1:/
 else
   usage
+  exit 1
 fi
