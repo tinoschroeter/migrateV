@@ -27,12 +27,12 @@
 in the most cases it will work anyway...
 
 ```
-   ####################                     =          ###############
-   # original Server  #                       =        # new Server  #
-   #                  #      ====================      #             #
-   #   migrateV       #      ====================      #   init 1    #
-   #                  #                       =        #  10.0.0.1   #
-   ###################                      =          ###############
+        ####################                     =          ###############
+        # original Server  #                       =        # new Server  #
+        #                  #      ====================      #             #
+        #   migrateV       #      ====================      #   init 1    #
+        #                  #                       =        #  10.0.0.1   #
+        ###################                      =          ###############
 ```
 
-
+![screenshot](https://raw.githubusercontent.com/tinoschroeter/migrateV/master/fishbowl.jpg)
