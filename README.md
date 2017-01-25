@@ -16,9 +16,9 @@
 
 ```
 ~ # on the Server you want to migrate (Bare Metal / VMWare / Xen / Hyper-V / what ever)
-~ sudo wget -O /usr/local/bin/assh https://raw.githubusercontent.com/tinoschroeter/migrateV/master/migrateV
+~ sudo wget -O /usr/local/bin/migrateV https://raw.githubusercontent.com/tinoschroeter/migrateV/master/migrateV
 ~ sudo chmod +x /usr/local/bin/migrateV
-~ migrate [IP Address of your new VM]
+~ migrateV [IP Address of your new VM]
 ~ done
 
 ```
