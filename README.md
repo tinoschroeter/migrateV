@@ -23,15 +23,15 @@
 
 ```
 
-### if you have Databases or something similar on your machine ##Stop it 
+### if you have Databases or something similar on your machine !!STOP IT!! 
 
 ```
-####################                  =          ###############
-# original Server  #                    =        # new Server  #
-#                  #   ====================      #             #
-#   migrateV       #   ====================      #   init 1    #
-#                  #                    =        #  10.0.0.1   #
-###################                   =          ###############
+   ####################                     =          ###############
+   # original Server  #                       =        # new Server  #
+   #                  #      ====================      #             #
+   #   migrateV       #      ====================      #   init 1    #
+   #                  #                       =        #  10.0.0.1   #
+   ###################                      =          ###############
 ```
 
 
