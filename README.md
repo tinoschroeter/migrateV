@@ -19,7 +19,8 @@
 ~ sudo wget -O /usr/local/bin/migrateV https://raw.githubusercontent.com/tinoschroeter/migrateV/master/migrateV
 ~ sudo chmod +x /usr/local/bin/migrateV
 ~ migrateV [IP Address of your new VM]
-~ done
+~ done \o/ 
+~ restart your new box and shutdown the old one
 
 ```
 
