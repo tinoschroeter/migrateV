@@ -11,7 +11,7 @@ if  [ $1 == "--help" ] || [ $1 == "-h" ];then
 fi
 
 if [ -n "$1" ] && [ "$(id -u)" == "0" ];then
-echo "root password: ";exit 0
+echo "root password: "
 time rsync -aAXv --exclude={"/dev/*","/proc/*","/sys","/boot","/dev","/etc/mtab","/etc/fstab","/etc/udev/rules.d","/lib/modules","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/etc/network/interfaces"} ssh / root@$1:/
 else
   usage
