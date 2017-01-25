@@ -35,4 +35,4 @@ in the most cases it will work anyway...
         ###################                      =          ###############
 ```
 
-![screenshot](https://raw.githubusercontent.com/tinoschroeter/migrateV/master/fishbowl.jpg?style=center)
+.center![screenshot](https://raw.githubusercontent.com/tinoschroeter/migrateV/master/fishbowl.jpg)
