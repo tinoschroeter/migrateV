@@ -9,7 +9,6 @@
 ~ find your IP (ifconfig)
 ~ start your ssh daemon service ssh start
 ~ go to your old Server and follow the installation steps
-
 ```
 
 ### Install and Usage:
@@ -21,7 +20,6 @@
 ~ migrateV [IP Address of your new VM]
 ~ done \o/ 
 ~ restart your new box and shutdown the old one
-
 ```
 
 ### if you have Databases or something similar on your machine !!STOP IT!! 
