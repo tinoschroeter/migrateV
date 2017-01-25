@@ -25,3 +25,12 @@
 
 ### if you have Databases or something similar on your machine ##Stop it 
 
+####################                  =          ###############
+# original Server  #                    =        # new Server  #
+#                  #   ====================      #             #
+#   migrateV       #   ====================      #   init 1    #
+#                  #                    =        #  10.0.0.1   #
+###################                   =          ###############
+
+
+
