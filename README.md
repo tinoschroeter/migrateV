@@ -3,7 +3,7 @@
 ### first of all
 
 ```
-~ deploay or start a new Server with the same Linux System
+~ deploy or start a new Server with the same Linux System
 ~ login with root and change to runlevel 1 (init 1)
 ~ bring your network up ifup eth0||ens3
 ~ find your IP (ifconfig)
