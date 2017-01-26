@@ -1,4 +1,5 @@
 ## HOWTO migrate Virtual Server from one Hypervisor to another
+### V2V or P2V
 
 ### first of all
 
