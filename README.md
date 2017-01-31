@@ -14,13 +14,13 @@
 ### Install and Usage:
 
 ```
-~ # on the Server you want to migrate (Bare Metal / VMWare / Xen / Hyper-V / what ever)
-~ login ass root
-~ wget -O /usr/local/bin/migrateV https://raw.githubusercontent.com/tinoschroeter/migrateV/master/migrateV
-~ chmod +x /usr/local/bin/migrateV
-~ migrateV [IP Address of your new VM]
-~ done \o/ 
-~ restart your new box and shutdown the old one
+# on the Server you want to migrate (Bare Metal / VMWare / Xen / Hyper-V / what ever)
+login ass root
+wget -O /usr/local/bin/migrateV https://raw.githubusercontent.com/tinoschroeter/migrateV/master/migrateV
+chmod +x /usr/local/bin/migrateV
+migrateV [IP Address of your new VM]
+done \o/ 
+restart your new box and shutdown the old one
 ```
 
 ### if you have Databases or something similar on your machine !!STOP IT!! 
