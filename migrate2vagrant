@@ -1,0 +1,26 @@
+#!/bin/bash
+
+usage() {
+  echo migrate2vagrant server.example.org  
+  echo -e "you have to be \033[41;1mroot\033[0m to use migrateV"
+  echo "Doku: https://github.com/tinoschroeter/migrateV"
+}
+if  [[ $1 == "--help" ]] || [[ $1 == "-h" ]];then
+  usage
+  exit 1
+fi
+
+if [ -n "$1" ] && [ "$(id -u)" == "0" ];then
+echo "root password: "
+time rsync -avze ssh root@"$1":/ / --exclude={"/dev/*","/proc/*","/sys","/boot","/dev","/etc/mtab","/etc/fstab","/etc/udev/rules.d","/lib/modules","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} 
+
+useradd vagrant
+tee /home/vagrant/.ssh/authorized_keys >/dev/null << EOF
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDItiXtr4Qrs3VQWN2NUpJYnKvFbMEpH0mGh43iySSuOGSJtNt6W+R/wucYRWFyf7x163ZcPLF2gDNd1UK4clpcx7KhqFL5fu+7gW2a4UZPBLwT94Fq33Z7rRKI3mixeVGspysLU/NquPesmKDxb5L8/fsmXsIc5Zuu007sTQfCN1TIg3NoG+LGsj/s2MryBiANEbnkuoB+wGsl1jQBUcsaPtj2jWPYE+2esGuA/8X9pc4TaHGvUUu7gU6iAU/ogBQbj2ZHXnS+SN/J7C+py/JMGii2bNGP+a4SBmRFs+d2wEnY5yEcTcvHvywV6uvlK75ZnxoP6XOP7uytoiHcbP59 vagrant
+EOF
+chmod 600 /home/vagrant/.ssh/authorized_keys;chown vagrant:vagrant /home/vagrant/.ssh/authorized_keys
+
+else
+  usage
+  exit 1
+fi
