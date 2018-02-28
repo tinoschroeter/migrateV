@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/tinoschroeter/migrateV.svg?branch=master)](https://travis-ci.org/tinoschroeter/migrateV)
 ![Bash Script](https://img.shields.io/badge/%23!Bash%20-%20Script-blue.svg)
 
-### first of all
+## first of all
 
 ```
 ~ deploy or start a new Server with the same Linux System
@@ -13,7 +13,7 @@
 ~ go to your old Server and follow the installation steps
 ```
 
-### Install and Usage:
+## Install and Usage:
 
 ```
 # on the Server you want to migrate (Bare Metal / VMWare / Xen / Hyper-V / what ever)
@@ -25,7 +25,7 @@ done \o/
 restart your new box and shutdown the old one
 ```
 
-### if you have Databases or something similar on your machine !!STOP IT!! 
+## if you have Databases or something similar on your machine !!STOP IT!! 
 in the most cases it will work anyway...
 
 ```
@@ -37,6 +37,15 @@ in the most cases it will work anyway...
         ###################                      =          ###############
 ```
 
+## migrate2vagrant
 
+```
+$ vagrant up
+$ vagrant ssh
+
+vagrant@migrateV:~$ sudo -i
+root@migrateV:~# migrate2vagrant server01.example.org
+root@migrateV:~# reboot
+``` 
 
 <p align="center"><img src="https://raw.githubusercontent.com/tinoschroeter/migrateV/master/fishbowl.jpg"></p>
