@@ -4,3 +4,4 @@ before_install:
 
 script:
   - shellcheck migrateV
+  - shellcheck migrate2vagrant
