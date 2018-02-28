@@ -1,0 +1,6 @@
+language: bash
+before_install:
+  - sudo apt-get install shellcheck
+
+script:
+  - shellcheck migrateV

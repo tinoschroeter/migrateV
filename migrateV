@@ -5,14 +5,14 @@ usage() {
   echo -e "you have to be \033[41;1mroot\033[0m to use migrateV"
   echo "Doku: https://github.com/tinoschroeter/migrateV"
 }
-if  [ $1 == "--help" ] || [ $1 == "-h" ];then
+if  [[ $1 == "--help" ]] || [[ $1 == "-h" ]];then
   usage
   exit 1
 fi
 
 if [ -n "$1" ] && [ "$(id -u)" == "0" ];then
 echo "root password: "
-time rsync -aAXv --exclude={"/dev/*","/proc/*","/sys","/boot","/dev","/etc/mtab","/etc/fstab","/etc/udev/rules.d","/lib/modules","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} ssh / root@$1:/
+time rsync -aAXv --exclude={"/dev/*","/proc/*","/sys","/boot","/dev","/etc/mtab","/etc/fstab","/etc/udev/rules.d","/lib/modules","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} ssh / root@"$1":/
 else
   usage
   exit 1
