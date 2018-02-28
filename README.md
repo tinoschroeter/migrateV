@@ -1,4 +1,5 @@
 ## HOWTO migrate Virtual Server from one Hypervisor to another V2V or P2V
+[![Build Status](https://travis-ci.org/tinoschroeter/migrateV.svg?branch=master)](https://travis-ci.org/tinoschroeter/migrateV)
 
 ### first of all
 
