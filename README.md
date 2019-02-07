@@ -17,7 +17,7 @@
 
 ```
 # on the Server you want to migrate (Bare Metal / VMWare / Xen / Hyper-V / what ever)
-login ass root
+login as root
 wget -O /usr/local/bin/migrateV https://raw.githubusercontent.com/tinoschroeter/migrateV/master/migrateV
 chmod +x /usr/local/bin/migrateV
 migrateV [IP Address of your new VM]
